@@ -1,0 +1,94 @@
+/* App.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1e1e1e; /* Changed background color to a darker shade */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff; /* Changed heading color to white */
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #999; /* Changed border color to a lighter shade */
+  margin-bottom: 20px;
+  color: #333; /* Changed text color to a darker shade */
+  background-color: #f3f3f3; /* Changed background color to a lighter shade */
+}
+
+button {
+  border: none;
+  background-color: #646cff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #535bf2;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  color: #fff; /* Changed text color to white */
+}
+
+.patient-message {
+  background-color: #6ed9b4; /* Cool green */
+  align-self: flex-start;
+}
+
+.doctor-message {
+  background-color: #f99256; /* Cool orange */
+  align-self: flex-end;
+}
+
+
+.answer-container {
+  max-height: 200px; /* Adjust max height as needed */
+  overflow-y: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.answer {
+  background-color: #535bf2;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  word-wrap: break-word; /* Wrap long words */
+}
